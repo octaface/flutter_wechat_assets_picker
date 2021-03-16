@@ -11,7 +11,9 @@ dependencies:
   flutter:
     sdk: flutter
 
-  extended_image: ^1.1.2
+  extended_image:
+    git:
+      https://github.com/octaface/extended_image
   photo_manager: ">=0.5.8 <2.0.0"
   provider: ^4.3.2+2
   video_player: ">=0.11.0 <2.0.0"

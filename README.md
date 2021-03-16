@@ -1,5 +1,7 @@
 # Flutter WeChat Assets Picker
 
+> A temporary fix based on 4.2.2 by updating dependencies
+
 [![pub package](https://img.shields.io/pub/v/wechat_assets_picker?logo=dart&label=stable&style=flat-square)](https://pub.dev/packages/wechat_assets_picker)
 [![pub package](https://img.shields.io/pub/v/wechat_assets_picker?color=42a012&include_prereleases&label=dev&logo=dart&style=flat-square)](https://pub.dev/packages/wechat_assets_picker)
 [![GitHub stars](https://img.shields.io/github/stars/fluttercandies/flutter_wechat_assets_picker?logo=github&style=flat-square)](https://github.com/fluttercandies/flutter_wechat_assets_picker/stargazers)
@@ -38,26 +40,30 @@ This project follows the [all-contributors](https://github.com/all-contributors/
 
 ## Category 🗂
 
-* [Features](#features-)
-* [Screenshots](#screenshots-)
-* [Preparing for use](#preparing-for-use-)
-  * [Version constraints](#version-constraints)
-  * [Flutter](#flutter)
-  * [Android](#android)
-  * [iOS](#ios)
-  * [MacOS](#macos)
-* [Usage](#usage-)
-  * [Simple usage](#simple-usage)
-  * [Complete param usage](#complete-param-usage)
-  * [Register assets change observe callback](#register-assets-change-observe-callback)
-* [Classes Introduction](#classes-introduction-)
-  * [`AssetEntity`](#assetentity)
-* [Frequent asked question](#frequent-asked-question-)
-  * [Version resolve conflict with `xxx` (e.g. `dartx`)](#version-resolve-conflict-with-xxx-eg-dartx)
-  * [How can I get path from the `AssetEntity` to integrate with `File` object, upload or edit?](#how-can-i-get-path-from-the-assetentity-to-integrate-with-file-object-upload-or-edit)
-  * [How can I change the name of "Recent" or other entities name/properties?](#how-can-i-change-the-name-of-recent-or-other-entities-nameproperties)
-  * [Create `AssetEntity` from `File` or `Uint8List` (rawData)](#create-assetentity-from-file-or-uint8list-rawdata)
-  * [Console warning 'Failed to find GeneratedAppGlideModule'](#glide-warning-failed-to-find-generatedappglidemodule)
+- [Flutter WeChat Assets Picker](#flutter-wechat-assets-picker)
+  - [Contributors ✨](#contributors-)
+  - [Category 🗂](#category-)
+  - [Features ✨](#features-)
+  - [Screenshots 📸](#screenshots-)
+  - [READ THIS FIRST ‼️](#read-this-first-️)
+  - [Preparing for use 🍭](#preparing-for-use-)
+    - [Version constraints](#version-constraints)
+    - [Flutter](#flutter)
+    - [Android](#android)
+    - [iOS](#ios)
+    - [MacOS](#macos)
+  - [Usage 📖](#usage-)
+    - [Simple usage](#simple-usage)
+    - [Complete param usage](#complete-param-usage)
+    - [Register assets change observe callback](#register-assets-change-observe-callback)
+  - [Classes Introduction 💭](#classes-introduction-)
+    - [`AssetEntity`](#assetentity)
+  - [Frequent asked question ❔](#frequent-asked-question-)
+    - [Version resolve conflict with `xxx` (e.g. `dartx`)](#version-resolve-conflict-with-xxx-eg-dartx)
+    - [How can I get path from the `AssetEntity` to integrate with `File` object, upload or edit?](#how-can-i-get-path-from-the-assetentity-to-integrate-with-file-object-upload-or-edit)
+    - [How can I change the name of "Recent" or other entities name/properties?](#how-can-i-change-the-name-of-recent-or-other-entities-nameproperties)
+    - [Create `AssetEntity` from `File` or `Uint8List` (rawData)](#create-assetentity-from-file-or-uint8list-rawdata)
+    - [Glide warning 'Failed to find GeneratedAppGlideModule'](#glide-warning-failed-to-find-generatedappglidemodule)
 
 ## Features ✨
 
@@ -115,7 +121,7 @@ import 'package:wechat_assets_picker/wechat_assets_picker.dart';
 
 Required permissions: `INTERNET`, `READ_EXTERNAL_STORAGE`, `WRITE_EXTERNAL_STORAGE`, `ACCESS_MEDIA_LOCATION`.
 
-If you found some warning logs with `Glide` appearing, then the main project needs an implementation of `AppGlideModule`. 
+If you found some warning logs with `Glide` appearing, then the main project needs an implementation of `AppGlideModule`.
 See [Generated API](https://sjudd.github.io/glide/doc/generatedapi.html).
 
 ### iOS
